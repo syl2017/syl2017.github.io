@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://syl2017.github.io//favicon.ico?v=1589245664696">
+<link rel="shortcut icon" href="https://syl2017.github.io//favicon.ico?v=1589267365552">
 <link rel="stylesheet" href="https://syl2017.github.io//styles/main.css">
 
 
@@ -39,7 +39,7 @@ OOD
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://syl2017.github.io/">
-        <img src="https://syl2017.github.io//images/avatar.png?v=1589245664696" class="site-logo">
+        <img src="https://syl2017.github.io//images/avatar.png?v=1589267365552" class="site-logo">
         <h1 class="site-title">亮仔的博客</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -199,114 +199,6 @@ OOD
 <figure data-type="image" tabindex="20"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E8%BF%AA%E7%B1%B3%E7%89%B9%E5%8E%9F%E5%88%99C%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
 <p>代码2</p>
 <figure data-type="image" tabindex="21"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E8%BF%AA%E7%B1%B3%E7%89%B9%E5%8E%9F%E5%88%99D%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
-<p><strong>设计模式</strong>（Design Pattern）</p>
-<h5 id="创建类模式高效地创建对象">创建类模式（高效地创建对象）</h5>
-<ul>
-<li>简单工厂模式(Simple Factory)</li>
-<li>工厂方法模式(Factory Method)</li>
-<li>抽象工厂模式(Abstract Factory)</li>
-<li>创建者模式(Builder)</li>
-<li>原型模式(Prototype)</li>
-<li>单例模式(Singleton)</li>
-</ul>
-<h5 id="结构型模式对象的结构关系">结构型模式（对象的结构关系）</h5>
-<ul>
-<li>外观模式(Facade)</li>
-<li>适配器模式(Adapter)</li>
-<li>代理模式(Proxy)</li>
-<li>装饰模式(Decorator)</li>
-<li>桥接模式(Bridge)</li>
-<li>组合模式(Composite)</li>
-<li>享元模式(Flyweight)</li>
-</ul>
-<p>行为型模式（对象的行为）</p>
-<ul>
-<li>模板方法模式（Template Method）</li>
-<li>观察者模式（Observer）</li>
-<li>状态模式（State）</li>
-<li>策略模式（Strategy）</li>
-<li>职责链模式（Chain of Responsibility)</li>
-<li>命令模式(Command)</li>
-<li>访问者模式(Visitor)</li>
-<li>中介者模式(Mediator)</li>
-<li>备忘录模式(Memento)</li>
-<li>迭代器模式(Iterator)</li>
-<li>解释器模式(Interpreter)</li>
-</ul>
-<h5 id="1单例模式"><strong>1.单例模式</strong></h5>
-<p>保证一个类仅有一个实例，并提供一个访问他的全局访问点。</p>
-<p>成员：静态的实例</p>
-<p>方法：1.私有构造 2.静态的获取实例方法</p>
-<figure data-type="image" tabindex="22"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8FA%E5%9B%BE.jpg" alt="" loading="lazy"></figure>
-<p>创建分类</p>
-<ul>
-<li>饿汉式：（Hungry）
-<ul>
-<li>类加载时创建</li>
-<li>优点
-<ul>
-<li>线程安全</li>
-</ul>
-</li>
-<li>缺点
-<ul>
-<li>过早浪费资源</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>懒汉式：（Lazy）
-<ul>
-<li>在使用时做判断</li>
-<li>优点
-<ul>
-<li>使用时候才创建，节约资源</li>
-</ul>
-</li>
-<li>缺点
-<ul>
-<li>为线程安全付出额外代价</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<figure data-type="image" tabindex="23"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8FB%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
-<p>第一步：验证饥饿和懒惰的线程安全</p>
-<p>饥饿式通过结果可看到：可保证线程安全</p>
-<figure data-type="image" tabindex="24"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8A%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
-<p>懒汉式通过结果可看到无法保证单例模式的正确</p>
-<figure data-type="image" tabindex="25"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8B%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
-<p>以下对懒汉式的改进</p>
-<p>1.对getInstance方法加锁 即synchronized</p>
-<p>2.加锁的加强版双重判断 先判断对象是否存在 再给类加锁，之后再一次判断是否为空，给成员对象加volatile关键字。</p>
-<figure data-type="image" tabindex="26"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8C%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
-<p>3.使用内部类</p>
-<figure data-type="image" tabindex="27"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8D%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
-<h5 id="2工厂模式">2.工厂模式</h5>
-<p>属于创新型设计模式，通过专门定义一个类来负责其他类的实例。</p>
-<figure data-type="image" tabindex="28"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E7%AE%80%E5%8D%95%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8FA%E5%9B%BE.jpg" alt="" loading="lazy"></figure>
-<p>工厂角色：负责创建所有逻辑，创建所需对象。</p>
-<p>抽象产品角色：所有对象的父类，也可为借口或抽象类。</p>
-<p>具体产品：拥有共同父类。</p>
-<p>代码实现</p>
-<figure data-type="image" tabindex="29"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E7%AE%80%E5%8D%95%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8FB%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
-<p>优点</p>
-<p>根据外界的信息，决定创建那个具体类的对象。用户使用直接创建所需的实例，而无需了解这些对象如何创建以及组织。</p>
-<p>缺点</p>
-<p>工厂类集中了所有实例的创建逻辑，违背了单一职责，违背了开放封闭原则。</p>
-<h5 id="4工厂方法">4.工厂方法</h5>
-<p>定义一个创建对象的接口，让其子类决定实例化哪一个类。</p>
-<figure data-type="image" tabindex="30"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95A%E5%9B%BE.jpg" alt="" loading="lazy"></figure>
-<p>工厂借口：与调用者交互来提供产品</p>
-<p>工厂实现：工厂决定如何实例化产品，有多少种产品，就需要多少个具体的工厂实现。</p>
-<p>产品借口：定义产品规范</p>
-<p>产品实现：实现产品借口的具体类。</p>
-<figure data-type="image" tabindex="31"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95B%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
-<p>优点：用户只需要知道所要产品的具体工厂，无须关系具体的创建过程，甚至不需要具体产品类的类名。</p>
-<p>缺点：每次增加一个产品，都需要增加一个具体和对象实现工厂。是的系统中类的个数成倍增加，在一定程度上增加了系统的复杂度，同时也增加具体类的依赖。</p>
-<h5 id="抽象工厂">抽象工厂</h5>
-<p>多个抽象产品类，派生出多个具体产品类；一个抽象工厂类，派生出多个具体工厂类；每个具体工厂类可创建多个具体产品类的实例。</p>
 
             </div>
             

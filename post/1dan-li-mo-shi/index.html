@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>面向对象技术 | 亮仔的博客</title>
+<title>1.单例模式（上） | 亮仔的博客</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,7 +18,30 @@
 
 
 
-    <meta name="description" content="转身从此陌生">
+    <meta name="description" content="1.单例模式
+保证一个类仅有一个实例，并提供一个访问他的全局访问点。
+成员：静态的实例
+方法：1.私有构造 2.静态的获取实例方法
+
+创建分类
+
+饿汉式：（Hungry）
+
+类加载时创建
+优点
+
+线程安全
+
+
+缺点
+
+过早浪费资源
+
+
+
+
+..." />
+    <meta name="keywords" content="设计模式" />
   </head>
   <body>
     <div id="app" class="main">
@@ -88,53 +111,75 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: 面向对象技术</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://syl2017.github.io/post/mian-xiang-dui-xiang-she-ji-yuan-ze/">
-                  <h2 class="post-title">面向对象设计原则</h2>
-                </a>
-                <div class="post-date">
-                  2020-05-12
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-                <a class="right" href="https://syl2017.github.io/post/mian-xiang-dui-xiang-she-ji-yuan-ze/">
-                  <div class="feature-container" style="background-image: url('https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/20200512090717.jpg')">
-                  </div>
-                </a>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://syl2017.github.io/post/uml-jian-jie-yu-ru-men/">
-                  <h2 class="post-title">UML简介与入门</h2>
-                </a>
-                <div class="post-date">
-                  2020-05-12
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-                <a class="right" href="https://syl2017.github.io/post/uml-jian-jie-yu-ru-men/">
-                  <div class="feature-container" style="background-image: url('https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/20200512085520.jpg')">
-                  </div>
-                </a>
-              
-            </article>
-          
+          <div class="post-detail">
+            <h2 class="post-title">1.单例模式（上）</h2>
+            <div class="post-date">2020-05-12</div>
+            
+            <div class="post-content" v-pre>
+              <h5 id="1单例模式"><strong>1.单例模式</strong></h5>
+<p>保证一个类仅有一个实例，并提供一个访问他的全局访问点。</p>
+<p>成员：静态的实例</p>
+<p>方法：1.私有构造 2.静态的获取实例方法</p>
+<figure data-type="image" tabindex="1"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8FA%E5%9B%BE.jpg" alt="" loading="lazy"></figure>
+<p>创建分类</p>
+<ul>
+<li>饿汉式：（Hungry）
+<ul>
+<li>类加载时创建</li>
+<li>优点
+<ul>
+<li>线程安全</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>过早浪费资源</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>懒汉式：（Lazy）
+<ul>
+<li>在使用时做判断</li>
+<li>优点
+<ul>
+<li>使用时候才创建，节约资源</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>为线程安全付出额外代价</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure data-type="image" tabindex="2"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8FB%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
 
-          <div class="pagination-container">
-  
-  
-</div>
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://syl2017.github.io/tag/GxbRRH43_/" class="tag">
+                    设计模式
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://syl2017.github.io/post/she-ji-mo-shi-fen-lei/">
+                  <h3 class="post-title">
+                    设计模式分类
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
 
         </div>
       </div>

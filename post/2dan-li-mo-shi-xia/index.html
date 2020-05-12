@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>关于 | 亮仔的博客</title>
+<title>2.单例模式（下） | 亮仔的博客</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,18 +18,15 @@
 
 
 
-    <meta name="description" content="
-欢迎来到我的小站呀，很高兴遇见你！🤝
+    <meta name="description" content="第一步：验证饥饿和懒惰的线程安全
+饥饿式通过结果可看到：可保证线程安全
 
-🏠 关于本站
-👨‍💻 博主是亮仔
-⛹ 兴趣爱好
-英雄联盟
-📬 联系我呀
-邮箱：18056074197@163.com
-手机：18056074197
-..." />
-    <meta name="keywords" content="" />
+懒汉式通过结果可看到无法保证单例模式的正确
+
+以下对懒汉式的改进
+1.对getInstance方法加锁 即synchronized
+2.加锁的加强版双重判断 先判断对..." />
+    <meta name="keywords" content="设计模式" />
   </head>
   <body>
     <div id="app" class="main">
@@ -100,23 +97,41 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">关于</h2>
-            <div class="post-date">2019-01-25</div>
+            <h2 class="post-title">2.单例模式（下）</h2>
+            <div class="post-date">2020-05-12</div>
             
             <div class="post-content" v-pre>
-              <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是亮仔">👨‍💻 博主是亮仔</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<p>英雄联盟</p>
-<h2 id="联系我呀">📬 联系我呀</h2>
-<p>邮箱：18056074197@163.com<br>
-手机：18056074197</p>
+              <p>第一步：验证饥饿和懒惰的线程安全</p>
+<p>饥饿式通过结果可看到：可保证线程安全</p>
+<figure data-type="image" tabindex="1"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8A%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
+<p>懒汉式通过结果可看到无法保证单例模式的正确</p>
+<figure data-type="image" tabindex="2"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8B%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
+<p>以下对懒汉式的改进</p>
+<p>1.对getInstance方法加锁 即synchronized</p>
+<p>2.加锁的加强版双重判断 先判断对象是否存在 再给类加锁，之后再一次判断是否为空，给成员对象加volatile关键字。</p>
+<figure data-type="image" tabindex="3"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8C%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
+<p>3.使用内部类</p>
+<figure data-type="image" tabindex="4"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8D%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
 
             </div>
             
+              <div class="tag-container">
+                
+                  <a href="https://syl2017.github.io/tag/GxbRRH43_/" class="tag">
+                    设计模式
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://syl2017.github.io/post/1dan-li-mo-shi/">
+                  <h3 class="post-title">
+                    1.单例模式（上）
+                  </h3>
+                </a>
+              </div>
             
 
             

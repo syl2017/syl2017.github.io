@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>面向对象技术 | 亮仔的博客</title>
+<title>4 .工厂方法 | 亮仔的博客</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,7 +18,15 @@
 
 
 
-    <meta name="description" content="转身从此陌生">
+    <meta name="description" content="4.工厂方法
+定义一个创建对象的接口，让其子类决定实例化哪一个类。
+
+工厂借口：与调用者交互来提供产品
+工厂实现：工厂决定如何实例化产品，有多少种产品，就需要多少个具体的工厂实现。
+产品借口：定义产品规范
+产品实现：实现产品借口的具体类。
+..." />
+    <meta name="keywords" content="设计模式" />
   </head>
   <body>
     <div id="app" class="main">
@@ -88,53 +96,46 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: 面向对象技术</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://syl2017.github.io/post/mian-xiang-dui-xiang-she-ji-yuan-ze/">
-                  <h2 class="post-title">面向对象设计原则</h2>
-                </a>
-                <div class="post-date">
-                  2020-05-12
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-                <a class="right" href="https://syl2017.github.io/post/mian-xiang-dui-xiang-she-ji-yuan-ze/">
-                  <div class="feature-container" style="background-image: url('https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/20200512090717.jpg')">
-                  </div>
-                </a>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://syl2017.github.io/post/uml-jian-jie-yu-ru-men/">
-                  <h2 class="post-title">UML简介与入门</h2>
-                </a>
-                <div class="post-date">
-                  2020-05-12
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-                <a class="right" href="https://syl2017.github.io/post/uml-jian-jie-yu-ru-men/">
-                  <div class="feature-container" style="background-image: url('https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/20200512085520.jpg')">
-                  </div>
-                </a>
-              
-            </article>
-          
+          <div class="post-detail">
+            <h2 class="post-title">4 .工厂方法</h2>
+            <div class="post-date">2020-05-12</div>
+            
+            <div class="post-content" v-pre>
+              <h5 id="4工厂方法">4.工厂方法</h5>
+<p>定义一个创建对象的接口，让其子类决定实例化哪一个类。</p>
+<figure data-type="image" tabindex="1"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95A%E5%9B%BE.jpg" alt="" loading="lazy"></figure>
+<p>工厂借口：与调用者交互来提供产品</p>
+<p>工厂实现：工厂决定如何实例化产品，有多少种产品，就需要多少个具体的工厂实现。</p>
+<p>产品借口：定义产品规范</p>
+<p>产品实现：实现产品借口的具体类。</p>
+<figure data-type="image" tabindex="2"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95B%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
+<p>优点：用户只需要知道所要产品的具体工厂，无须关系具体的创建过程，甚至不需要具体产品类的类名。</p>
+<p>缺点：每次增加一个产品，都需要增加一个具体和对象实现工厂。是的系统中类的个数成倍增加，在一定程度上增加了系统的复杂度，同时也增加具体类的依赖。</p>
 
-          <div class="pagination-container">
-  
-  
-</div>
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://syl2017.github.io/tag/GxbRRH43_/" class="tag">
+                    设计模式
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://syl2017.github.io/post/2-5-gong-han-mo-shi-gong-han-fang-fa-chou-xiang-fang-fa/">
+                  <h3 class="post-title">
+                    3.工厂模式 
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
 
         </div>
       </div>
