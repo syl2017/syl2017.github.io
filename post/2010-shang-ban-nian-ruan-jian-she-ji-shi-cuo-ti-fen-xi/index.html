@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>2010上半年软件设计师错题分析 | 亮仔的博客</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://syl2017.github.io//favicon.ico?v=1589270463305">
+<link rel="stylesheet" href="https://syl2017.github.io//styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="（上午）
+1.（P3）指令寄存器IR用来保存当前正在执行的指令。
+地址寄存器（AR）用来保存当前CPU所访问的内存单元的地址
+由于在内存和CPU之间存在操作速度上的差别
+2.(P50)系统可靠度
+串联系统：可靠度为各子系统可靠度的乘积 R=..." />
+    <meta name="keywords" content="软件考试中级" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://syl2017.github.io/">
+        <img src="https://syl2017.github.io//images/avatar.png?v=1589270463305" class="site-logo">
+        <h1 class="site-title">亮仔的博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      转身从此陌生
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com" target="_blank">Gridea</a> | <a class="rss" href="https://syl2017.github.io//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">2010上半年软件设计师错题分析</h2>
+            <div class="post-date">2020-05-12</div>
+            
+            <div class="post-content" v-pre>
+              <h4 id="上午">（上午）</h4>
+<p>1.（P3）指令寄存器IR用来保存当前正在执行的指令。</p>
+<p>地址寄存器（AR）用来保存当前CPU所访问的内存单元的地址</p>
+<p>由于在内存和CPU之间存在操作速度上的差别</p>
+<p>2.(P50)<strong>系统可靠度</strong><br>
+串联系统：可靠度为各子系统可靠度的乘积 R=R1R2***Rn</p>
+<p>​	并联系统：可靠度分别为R1、R2、...RN表示R=1-(1-R1)(1-R2)***(1-Rn)</p>
+<p>3.<strong>中断</strong></p>
+<p>根据是否可以被屏蔽，可将中断分为两大类：不可屏蔽中断和可屏蔽中断</p>
+<p>不可屏蔽中断源一旦提出请求，CPU必须无条件响应，而对可屏蔽中断源的请求，CPU可以响应，也可以不响应。</p>
+<p>典型的非屏蔽中断的例子就是电源掉电，一旦出现，必须立即无条件地响应</p>
+<p>典型的可屏蔽中断源的例子是打印机中断</p>
+<ol start="4">
+<li></li>
+</ol>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo>⊕</mo><mi>B</mi><mi mathvariant="normal">表</mi><mi mathvariant="normal">示</mi><mi mathvariant="normal">逻</mi><mi mathvariant="normal">辑</mi><mi mathvariant="normal">异</mi><mi mathvariant="normal">或</mi><mo>(</mo><mi mathvariant="normal">相</mi><mi mathvariant="normal">同</mi><mi mathvariant="normal">为</mi><mn>0</mn><mo separator="true">,</mo><mi mathvariant="normal">不</mi><mi mathvariant="normal">同</mi><mi mathvariant="normal">为</mi><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">A \oplus B 表示逻辑异或 (相同为0,不同为1)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">A</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⊕</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">表</span><span class="mord cjk_fallback">示</span><span class="mord cjk_fallback">逻</span><span class="mord cjk_fallback">辑</span><span class="mord cjk_fallback">异</span><span class="mord cjk_fallback">或</span><span class="mopen">(</span><span class="mord cjk_fallback">相</span><span class="mord cjk_fallback">同</span><span class="mord cjk_fallback">为</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord cjk_fallback">不</span><span class="mord cjk_fallback">同</span><span class="mord cjk_fallback">为</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></p>
+<p>6.计算机系统的运算速度受多种因素的影响。</p>
+<p>8-9.<strong>计算机病毒</strong>可分为文件型计算机病毒、引导性计算机病毒、宏病毒和目录型计算机病毒。</p>
+<p>文件型计算机病毒感染可执行文件（包括EXE和COM文件）</p>
+<p>引导性计算机病毒影响软盘和硬盘的引导扇区。</p>
+<p>目录型计算机病毒能够修改硬盘上存储的所有文件的地址。</p>
+<p>宏病毒感染的对象是使用某些程序创建的文本文档、数据库、电子表格等。</p>
+<p>10.我国授予专利权采用先申请原则。</p>
+<p>11.知识产权（P596）</p>
+<p>​	公民为完成法人或其他组织工作任务所创作的产品是职务作品。</p>
+<p>一般职务作品的著作权由作者所有</p>
+<p>特殊职务作品是利用法人或其他组织的物质技术条件创作，作者享有署名权，其他权利由法人或非法人单位享有。</p>
+<p>12-14.</p>
+<p>MEPG是Moving Picture Expert Group的简称</p>
+<p>标准包括MPEG-1、MPEG-2和MPEG-4主要针对音视频编码技术</p>
+<p>MPEG-7是多媒体内容描述接口标准，MPEG-21是多媒体应用框架标准</p>
+<p>VCD使用了MPEG-1标准作为音视频信息压缩编码方案</p>
+<p>MPEG-2标准被应用于DVD中</p>
+<p>15.基于构件的软件开发，强调在构建软件系统时复用已有的软件”构件“，需要针对新系统的需求对构件进行合格线检验、适应性修改，然后集成到新系统中。</p>
+<p>16.面向对象</p>
+<p>面向对象的软件开发，通常有面向对象分析、面向对象设计、面向对象实现</p>
+<ul>
+<li>面向对象分析是为了获得应用问题的理解，主要任务是抽取和整理用户需求并建立问题域精准模型。</li>
+<li>面向对象设计采用协作的对象、对象的属性和方法说明软件解决方案的一种方式</li>
+<li>面向对象实现主要采用面向对象程序设计语言实现系统</li>
+<li>面向对象预测是根据规范说明来验证系统设计的正确性。</li>
+</ul>
+<p>17.白盒测试也称结构测试</p>
+<p>根据程序的内部结构和逻辑来设计测试用例，对程序的执行路径和过程进行测试，检查是否满足设计的需要。</p>
+<p>18-19PERT图参照本书292页</p>
+<figure data-type="image" tabindex="1"><img src="G:%5C%E4%B8%8A%E4%BC%A0%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%5C%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88%E5%88%86%E6%9E%90%5CPERT%E5%9B%BE%EF%BC%88%E5%B7%A5%E7%A8%8B%E7%BD%91%E7%BB%9C%E5%9B%BE%EF%BC%89.jpg" alt="" loading="lazy"></figure>
+<p>22.中间代码是与具体的机器无关</p>
+<ul>
+<li>可以将不同的高级程序语言翻译成同一种中间代码。由于与具体机器无关，</li>
+<li>使用中间代码有利于进行与机器无关的优化处理</li>
+<li>以提高编译程序的可编译性</li>
+</ul>
+<ol start="20">
+<li></li>
+</ol>
+<p>16位补码为FFFFh ,FFFFh=1111 1111 1111 1111(补码)=1000 0000 0000 0001（原码）</p>
+<p>24.死锁</p>
+<p>系统同类资源分配不当会引起死锁。一般情况下，若系统中有m个单位的存储器资源，它被n个进程使用，当每个进程都要求w个单位的存储器资源，当m&lt;nw时，可能会引起死锁。</p>
+<p>例如， m=5, n=3, h=3若系统釆用的分配策略是轮流地为每个进程分配，则第一轮系统先为每个进 程分配一台，还剩下两台；第二轮系统再为两个进程各分配一台，此时，系统中已无可供分配 的资源，使得各个进程都处于等待状态导致系统发生死锁。</p>
+<p>25-26.</p>
+<p>局部性原理</p>
+<p>(1) 时间局部性。如果程序中的某条指令被执行，则不久以后该指令可能再次执行；如果某数据被访问过者，不久以后该数据可能再次被访问。</p>
+<p>(2) 空间局限性。一旦程序访问了某个存储单元，在不久之后其附近的存储单元也将被访问，即程序在一段时间内所访问的地址可能集中在一定的范围之内，其典型情况便是程序的顺序执行。</p>
+<figure data-type="image" tabindex="2"><img src="G:%5C%E4%B8%8A%E4%BC%A0%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%5C%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88%E5%88%86%E6%9E%90%5C%E9%A1%B5%E5%BC%8F%E5%9C%B0%E5%9D%80%E5%8F%98%E6%8D%A2%EF%BC%88%E8%99%9A%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2%E4%B8%BA%E5%86%85%E5%AD%98%E5%9C%B0%E5%9D%80%E7%9A%84%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95%EF%BC%89.jpg" alt="页式地址变换（虚地址转换为内存地址的计算方法）" loading="lazy"></figure>
+<p>27-28.</p>
+<p>29.配置数据库一般包括开发库、受控库和产品库。</p>
+<p>31.能力成熟模型CMMI是CMM模型的最新版本，CMMI共有6个（0~5）能力等级，对应未完成级、已执行级、已管理级、已定义级、量化管理级、优化级。</p>
+<ul>
+<li>能力等级0指未执行过程，表明过程域的一个或多个特定目标没有被满足；</li>
+<li>能力等级1值通过转化可识别的输入工作产品，关注与过程域的特定目标完成；</li>
+<li>能力等级2值过程作为已定义的过程制度化，过程的组织级标准化和部署</li>
+<li>能力等级3作为已定义的过程制度化，过程的组织级标准化和部署；</li>
+<li>能力等级4过程作为定量管理的过程制度化</li>
+<li>能力等级5指过程作为优化的过程制度化，能够很好的执行且持续得到改进</li>
+</ul>
+<p>32.统一过程（UP）定义了初启阶段、进化阶段、构建阶段、移交阶段和产生阶段。</p>
+<ul>
+<li>初启阶段的里程碑是生命周期目标</li>
+<li>精化阶段的里程碑是生命周期架构</li>
+<li>构建阶段的里程碑是初始运作功能</li>
+<li>移交阶段的里程碑是产品发布。</li>
+</ul>
+<ol start="34">
+<li></li>
+</ol>
+<p>软件配置管理是一组管理整个软件周期各阶段中变更得活动，主要包括变更标识、变更控制和版本控制。</p>
+<ol start="35">
+<li></li>
+</ol>
+<ul>
+<li>单元测试侧重模块中的内部逻辑和数据结构。</li>
+<li>集成测试需要模块按系统设计说明书的要求组合起来进来测试</li>
+</ul>
+<ol start="36">
+<li></li>
+</ol>
+<p>McCabe度量法是一种基于程序流的复杂性度量方法</p>
+<p>V(G)=m-n+2 计算环路复杂度</p>
+<p>m是图中弧的个数，n是图中的结点数</p>
+<p>37.存在多种继承的概念，但不同的程序设计语言可以自己的规定。</p>
+<p>38-40.</p>
+<p>不同的对象收到同一消息可以产生完全不同的结果，这一现象叫做多态（polymorphism）</p>
+<p>绑定是在编译时进行的，叫做静态绑定。</p>
+<p>动态绑定则是在运行是进行的，因此，一个给定的过程调用和代码的结合直到调用发生时才进行。</p>
+<ol start="41">
+<li></li>
+</ol>
+<p>面向对象分析包括五个活动：认定对象、组织对象、描述对象间的相互关系、定义对象的操作、定义对象的内部信息。</p>
+<p>认定对象：按自然存在的实体确定对象。</p>
+<p>组织对象：分析对象间的关系。</p>
+<p>描述对象的相互作用是：描述出个对象在应用系统中的关系。</p>
+<p>43-44. 45-47.</p>
+<p>抽象工程设计模式的意图是提供一个创建一系列相关或相互依赖对象的接口，而无须指定他们具体的类。</p>
+<p>常见情形：一个系统要独立于其产品的创建、组合和表示时；</p>
+<p>​	一个系统要由多个产品系列中的一个来配置时；</p>
+<p>UML中类与类，已经类与接口，接口与接口的关系有：**泛化（generalization），关联（association），依赖（dependency），实现（realization）**这几种。</p>
+<p>泛化（generalization）关系时<strong>指一个类（子类、子接口）继承另外一个类（称为父类、父接口）的功能，并可以增加它自己新功能的能力</strong></p>
+<figure data-type="image" tabindex="3"><img src="https://images0.cnblogs.com/blog2015/531894/201506/121155171299723.png" alt="" loading="lazy"></figure>
+<p>实现（realization）是指<strong>一个class实现interface接口（一个或者多个）</strong></p>
+<figure data-type="image" tabindex="4"><img src="https://images0.cnblogs.com/blog2015/531894/201506/121155320982385.png" alt="" loading="lazy"></figure>
+<p>依赖（dependency）关系表示<strong>类与类之间的连接</strong>，表示一个类依赖于另外一个类的定义，<strong>依赖关系时是单向的</strong>。简单理解就是类A使用到了类B，这种依赖具有偶然性、临时性，是<strong>非常弱的关系</strong>。但是类B的变化会影响到类A。举个例子，如某人要过河，则人与船的关系就是依赖，人过河之后，与船的关系就解除了，因此是一种弱的连接。在代码层面，为类B作为参数被类A在某个方法中使用。</p>
+<p>在java中，依赖表现为：<strong>局部变量，方法中的参数和对静态方法的调用</strong>。</p>
+<figure data-type="image" tabindex="5"><img src="https://images0.cnblogs.com/blog2015/531894/201506/121355216292309.png" alt="" loading="lazy"></figure>
+<p>关联（association）关系表示<strong>类与类之间的连接</strong>，它使得一个类知道另外一个类的属性和方法。</p>
+<p>关联可以使用单箭头表示单向关联，关联有两个端点，每个端点可以有一个基数，表示这个关联的类可以有几个实例。</p>
+<p>0..1 表示可以有0个或者1个实例</p>
+<p>0..* 表示对实例的数目没有限制</p>
+<p>1   表示只能有一个实例</p>
+<p>1..* 表示至少有一个实例</p>
+<p>关联关系体现的是两个类，或者类与接口之间的<strong>强依赖关系</strong>，不是偶然性的，也不是临时性的，而是一种长期性，相对平等的关系，表现在代码层面，为被关联的类B以类属性的形式出现在类A中，也可能是关联类A引用了被关联类B的全局变量。</p>
+<p>在Java中，<strong>关联关系是使用实例变量来实现的</strong></p>
+<figure data-type="image" tabindex="6"><img src="https://images0.cnblogs.com/blog2015/531894/201506/121355508489015.png" alt="" loading="lazy"></figure>
+<p>聚合（aggregation）是<strong>关联关系的特例</strong>，是强的关联关系，<strong>聚合是整个与个体的关系</strong>，<strong>即has-a关系，此时整体和部分是可以分离的</strong>，他们具有各自的生命周期，部分可以属于多个对象，也可以被多个对象共享；比如计算机和CPU，公司与员工的关系；在代码层面聚合与关联是一致的，只能从语义上来区分。</p>
+<p>聚合关系也是使用实例变量来实现的，在java语法上区分不出关联和聚合，关联关系中类出于一个层次，而聚合则明显的在两个不同的层次。</p>
+<figure data-type="image" tabindex="7"><img src="https://images0.cnblogs.com/blog2015/531894/201506/121356046914120.png" alt="" loading="lazy"></figure>
+<p>组合（compostion）也是关联关系的一种特例，<strong>体现的是一种contain-a关系</strong>，比聚合更强，是一种强聚合关系。它同样体现整体与部分的关系，<strong>但此时整体与部分是不可分的</strong>，整体生命周期的结束也意味着部分生命周期的结束，反之亦然。<strong>如大脑和人类</strong>。</p>
+<p>体现在代码层面与关联时一致的，只能从语义来区分。</p>
+<p>组合与聚合几乎完全相同，唯一区别就是对于组合，“部分”不同脱离“整体”单独存在，其生命周期应该是一致的。</p>
+<figure data-type="image" tabindex="8"><img src="https://images0.cnblogs.com/blog2015/531894/201506/121356148635113.png" alt="" loading="lazy"></figure>
+<p>总结：</p>
+<p>主要是关联关系的细化需要注意强弱，由若到强分别是 依赖 &lt; 关联 &lt; 聚合 &lt; 组合</p>
+<blockquote>
+<p><a href="https://www.cnblogs.com/itplay/p/10671715.html">UML中常用引用关系详解</a></p>
+</blockquote>
+<p>48.编译和解释是语言处理的两种基本方式。</p>
+<p>解释过程直接执行源程序或源程序的内部形式。</p>
+<ul>
+<li>在编译方式下，机器上运行的是与源程序等价的目标程序，源程序和编译程序都不在参与目标程序的执行过程；而编译器则则需将源程序翻译成独立的目标程序。</li>
+<li>而在解释方式下，解释程序和源程序要参与到程序的运行过程中，运行程序的控制权在解释程序。解释器翻译源程序时不产生独立的目标程序。</li>
+</ul>
+<p>49.HTML（Hypertext Marked Language）超文本标记语言</p>
+<p>​	XML（Extensible Markup Language）可扩展的标记语言</p>
+<p>​	WML（Wireless Markup Language)WAP的标记语言</p>
+<p>51.需求分析阶段的任务是：对现实世界要处理的对象（组织、部门、企业等）进行详细调查。在了解现行系统的概况，确定新系统功能的过程中，确定系统边界、收集支持系统目标的基础数据及其处理办法。</p>
+<p>逻辑设计阶段的任务 关系模式进一步的规范化处理。</p>
+<p>根据规范化理论对关系模式进行分解，以消除冗余和更新异常。</p>
+<p>53-56.<em>有损连接、函数依赖</em></p>
+<p>57.二分查找 对其进行二分查找的判定树的高度为</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⌊</mo><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>2</mn></msub><mi>n</mi><mo>⌋</mo><mo>+</mo><mn>1</mn><mspace linebreak="newline"></mspace><mo>(</mo><mi mathvariant="normal">与</mi><mi mathvariant="normal">具</mi><mi mathvariant="normal">有</mi><mi>n</mi><mi mathvariant="normal">个</mi><mi mathvariant="normal">结</mi><mi mathvariant="normal">点</mi><mi mathvariant="normal">的</mi><mi mathvariant="normal">完</mi><mi mathvariant="normal">全</mi><mi mathvariant="normal">二</mi><mi mathvariant="normal">叉</mi><mi mathvariant="normal">树</mi><mi mathvariant="normal">一</mi><mi mathvariant="normal">样</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\lfloor log_{2}n \rfloor+1\\(与具有n个结点的完全二叉树一样)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">⌊</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault">n</span><span class="mclose">⌋</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord cjk_fallback">与</span><span class="mord cjk_fallback">具</span><span class="mord cjk_fallback">有</span><span class="mord mathdefault">n</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">结</span><span class="mord cjk_fallback">点</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">完</span><span class="mord cjk_fallback">全</span><span class="mord cjk_fallback">二</span><span class="mord cjk_fallback">叉</span><span class="mord cjk_fallback">树</span><span class="mord cjk_fallback">一</span><span class="mord cjk_fallback">样</span><span class="mclose">)</span></span></span></span></span></p>
+<p>58.<em>三角矩阵</em></p>
+<p>59.最优二叉树（哈夫曼树）</p>
+<p>最优二叉树中只有度为2和0的结点，因此，其结点总数为2n-1</p>
+<p>60.对于函数的递归调用于返回，一定是后被调用执行的先返回。</p>
+<p>61.当序列基本有序，直接插入排序过程中元素比较次数的较少，当序列为逆序是，元素的比较次数最多。</p>
+<p>62.哈希表中</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi><mo>=</mo><mfrac><mrow><mi mathvariant="normal">表</mi><mi mathvariant="normal">中</mi><mi mathvariant="normal">装</mi><mi mathvariant="normal">入</mi><mi mathvariant="normal">的</mi><mi mathvariant="normal">记</mi><mi mathvariant="normal">录</mi><mi mathvariant="normal">数</mi></mrow><mrow><mi mathvariant="normal">表</mi><mi mathvariant="normal">的</mi><mi mathvariant="normal">长</mi><mi mathvariant="normal">度</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\alpha = \frac{表中装入的记录数}{表的长度}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.363em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.677em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord cjk_fallback">表</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">长</span><span class="mord cjk_fallback">度</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord cjk_fallback">表</span><span class="mord cjk_fallback">中</span><span class="mord cjk_fallback">装</span><span class="mord cjk_fallback">入</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">记</span><span class="mord cjk_fallback">录</span><span class="mord cjk_fallback">数</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p>63.二叉排序树</p>
+<p>若插入的关键字大于树根，则插入到右子树，若小于树根，则插入到左子树上，若为空树，则作为树根结点。</p>
+<ol start="69">
+<li>&lt;malito&gt;标签定义一个指向电子邮箱地址的超级链接，通过该链接可以在Internet中发送电子邮件。</li>
+<li>POP默认的TCP端口是110</li>
+</ol>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://syl2017.github.io/tag/Ma0goush1/" class="tag">
+                    软件考试中级
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://syl2017.github.io/post/2009-nian-xia-ban-nian-ruan-jian-she-ji-shi-cuo-ti-fen-xi/">
+                  <h3 class="post-title">
+                    2009年下半年软件设计师错题分析
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>

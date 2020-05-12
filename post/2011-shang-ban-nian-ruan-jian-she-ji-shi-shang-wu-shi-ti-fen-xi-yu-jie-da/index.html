@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>2.单例模式（下） | 亮仔的博客</title>
+<title>2011上半年软件设计师上午试题分析与解答 | 亮仔的博客</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,15 +18,14 @@
 
 
 
-    <meta name="description" content="第一步：验证饥饿和懒惰的线程安全
-饥饿式通过结果可看到：可保证线程安全
-
-懒汉式通过结果可看到无法保证单例模式的正确
-
-以下对懒汉式的改进
-1.对getInstance方法加锁 即synchronized
-2.加锁的加强版双重判断 先判断对..." />
-    <meta name="keywords" content="设计模式" />
+    <meta name="description" content="23-24.
+位示图
+系统的字长为32位。磁盘上的物理块依次编号为0、1、2···，那么4096号物理块的使用情况在位示图中的第___个字描述。
+0~31 为第一个字
+32-63 为第二个字
+··· ···
+4064~4095 为第128个..." />
+    <meta name="keywords" content="软件考试中级" />
   </head>
   <body>
     <div id="app" class="main">
@@ -97,28 +96,55 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">2.单例模式（下）</h2>
+            <h2 class="post-title">2011上半年软件设计师上午试题分析与解答</h2>
             <div class="post-date">2020-05-12</div>
             
             <div class="post-content" v-pre>
-              <p>第一步：验证饥饿和懒惰的线程安全</p>
-<p>饥饿式通过结果可看到：可保证线程安全</p>
-<figure data-type="image" tabindex="1"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8A%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
-<p>懒汉式通过结果可看到无法保证单例模式的正确</p>
-<figure data-type="image" tabindex="2"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8B%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
-<p>以下对懒汉式的改进</p>
-<p>1.对getInstance方法加锁 即synchronized</p>
-<p>2.加锁的加强版双重判断 先判断对象是否存在 再给类加锁，之后再一次判断是否为空，给成员对象加volatile关键字。</p>
-<figure data-type="image" tabindex="3"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8C%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
-<p>3.使用内部类</p>
-<figure data-type="image" tabindex="4"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8D%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
+              <p>23-24.</p>
+<p>位示图</p>
+<p><strong>系统的字长为32位</strong>。磁盘上的物理块依次编号为0、1、2···，那么<strong>4096号</strong>物理块的使用情况在位示图中的第___个字描述。</p>
+<p>0~31 为第一个字</p>
+<p>32-63 为第二个字</p>
+<p>··· ···</p>
+<p>4064~4095 为第128个字</p>
+<p>4096~4127号129个字</p>
+<p>（4096+32）/32=129</p>
+<p>若硬盘的容量为200GB，物理块的大小为1MB，那么位示图的大小为__个字。</p>
+<p>磁盘中的物理块为（200*1024）MB/1MB=2048000个物理块。</p>
+<p>2048000/32=6400个</p>
+<ol start="29">
+<li></li>
+</ol>
+<p>瀑布模型从一种非高层的角度描述了软件开发过程中进行的活动，该模型使用于项目。</p>
+<p>V模型是瀑布模型的变种，测试活动是如何与分析和设计相联系的。原型模型允许开发人员快速地构造整个系统或系统的一部分以理解或澄清问题。</p>
+<p>原型模型可以有效地引发系统需求。</p>
+<p>螺旋模型把开发活动和风险管理结合起来，以风险捡到最小并控制风险。</p>
+<ol start="30">
+<li></li>
+</ol>
+<p>过程改进</p>
+<p>软件质量依赖于软件开发过程的质量，其中，人的因素是主导的，开发技术、过程质量、成本时间和进度也是影响因素。</p>
+<p>要使得过程改进有效，需要制定过程改进的目标，还需要对开发人员进行培训。</p>
+<p>CMMI是构成为“集成模型”，即成熟度模型，该模型支持阶段性过程改进和连续性过程改进。</p>
+<p>31-32.</p>
+<p>软件可靠性指的是一个系统对于给定的时间间隔内，在给定条件下无失效运行的概率。</p>
+<ol start="33">
+<li></li>
+</ol>
+<p>文档的特性</p>
+<p>针对性：文档编制应当考虑读者</p>
+<p>精确性：文档的行文应该十分确切</p>
+<p>清晰性：文档编写应力求简明</p>
+<p>完整性：任何文档都应当时完整的、独立的、应该自称体系</p>
+<p>灵活性：不同项目，规模和复杂度有实际差别</p>
+<p>可追溯性：前后两个阶段生成的文档具有一定的继承关系。</p>
 
             </div>
             
               <div class="tag-container">
                 
-                  <a href="https://syl2017.github.io/tag/GxbRRH43_/" class="tag">
-                    设计模式
+                  <a href="https://syl2017.github.io/tag/Ma0goush1/" class="tag">
+                    软件考试中级
                   </a>
                 
               </div>
@@ -126,9 +152,9 @@
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://syl2017.github.io/post/1dan-li-mo-shi/">
+                <a href="https://syl2017.github.io/post/2010-xia-ban-nian-ruan-jian-she-ji-shi-cuo-ti-fen-xi/">
                   <h3 class="post-title">
-                    1.单例模式（上）
+                    2010下半年软件设计师错题分析
                   </h3>
                 </a>
               </div>

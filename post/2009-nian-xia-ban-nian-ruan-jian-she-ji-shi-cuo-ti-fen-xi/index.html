@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>2.单例模式（下） | 亮仔的博客</title>
+<title>2009年下半年软件设计师错题分析 | 亮仔的博客</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,15 +18,9 @@
 
 
 
-    <meta name="description" content="第一步：验证饥饿和懒惰的线程安全
-饥饿式通过结果可看到：可保证线程安全
-
-懒汉式通过结果可看到无法保证单例模式的正确
-
-以下对懒汉式的改进
-1.对getInstance方法加锁 即synchronized
-2.加锁的加强版双重判断 先判断对..." />
-    <meta name="keywords" content="设计模式" />
+    <meta name="description" content="1.CPU是计算机的控制中心，主要由运算器、控制器、寄存器组和内部总线等部件组成。
+控制器由程序计数器、指令寄存器、指令译码器、时序产生器和操作控制器组成，它是发布命令的“决策机构”，即完成协调和指挥整个计算机系统的操作。它的主要功能有：从..." />
+    <meta name="keywords" content="软件考试中级" />
   </head>
   <body>
     <div id="app" class="main">
@@ -97,28 +91,20 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">2.单例模式（下）</h2>
+            <h2 class="post-title">2009年下半年软件设计师错题分析</h2>
             <div class="post-date">2020-05-12</div>
             
             <div class="post-content" v-pre>
-              <p>第一步：验证饥饿和懒惰的线程安全</p>
-<p>饥饿式通过结果可看到：可保证线程安全</p>
-<figure data-type="image" tabindex="1"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8A%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
-<p>懒汉式通过结果可看到无法保证单例模式的正确</p>
-<figure data-type="image" tabindex="2"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8B%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
-<p>以下对懒汉式的改进</p>
-<p>1.对getInstance方法加锁 即synchronized</p>
-<p>2.加锁的加强版双重判断 先判断对象是否存在 再给类加锁，之后再一次判断是否为空，给成员对象加volatile关键字。</p>
-<figure data-type="image" tabindex="3"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8C%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
-<p>3.使用内部类</p>
-<figure data-type="image" tabindex="4"><img src="https://liang-markdonw-pic.oss-cn-shenzhen.aliyuncs.com/img/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8D%E5%9B%BE.jpeg" alt="" loading="lazy"></figure>
+              <p>1.CPU是计算机的控制中心，主要由运算器、控制器、寄存器组和内部总线等部件组成。</p>
+<p>控制器由程序计数器、指令寄存器、指令译码器、时序产生器和操作控制器组成，它是发布命令的“决策机构”，即完成协调和指挥整个计算机系统的操作。它的主要功能有：从内存中取出一条指令，并指出下一条指令在内存中的位置；对指令进行译码或测试，并产生相应的操作控制信号，以便启动规定的动作；指挥并控制CPU、内存和输入输出设备之间数据的流动。</p>
+<p>程序计数器（PC)是专用寄存器，具有寄存信息和计数两种功能，又称为指令计数器，在程序开始执行前，将程序的起始地址送入PC,该地址在程序加载到内存时确定，因此PC的初始内容即是程序第一条指令的地址。执行指令时，CPU将自动修改PC的内容，以便使其保持的总是将要执行的下一条指令的地址。由于大多数指令都是按顺序执行的，因此修改的过程通常只是简单地对PC加1。当遇到转移指令时，后继指令的地址根据当前指令的地址加上一个向前或向后转移的位移量得到，或者根据转移指令给出 的直接转移的地址得到。</p>
 
             </div>
             
               <div class="tag-container">
                 
-                  <a href="https://syl2017.github.io/tag/GxbRRH43_/" class="tag">
-                    设计模式
+                  <a href="https://syl2017.github.io/tag/Ma0goush1/" class="tag">
+                    软件考试中级
                   </a>
                 
               </div>
@@ -126,9 +112,9 @@
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://syl2017.github.io/post/1dan-li-mo-shi/">
+                <a href="https://syl2017.github.io/post/2009-shang-ban-nian-ruan-jian-she-ji-shi-cuo-ti-fen-xi/">
                   <h3 class="post-title">
-                    1.单例模式（上）
+                     2009上半年软件设计师错题分析
                   </h3>
                 </a>
               </div>
