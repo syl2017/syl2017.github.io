@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://syl2017.github.io/</id>
     <title>亮仔的博客</title>
-    <updated>2020-05-12T08:01:15.886Z</updated>
+    <updated>2020-05-12T08:59:20.185Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://syl2017.github.io/"/>
     <link rel="self" href="https://syl2017.github.io/atom.xml"/>
@@ -25,7 +25,328 @@
         <link href="https://syl2017.github.io/post/di-yi-zhang-python-ji-chu/">
         </link>
         <updated>2020-05-12T07:53:22.000Z</updated>
-        <content type="html"><![CDATA[<p>1.1在交互环境中输入表达式</p>
+        <content type="html"><![CDATA[<p>第一章 Python 基础</p>
+<h5 id="11在交互式环境中输入表达式"><strong>1.1在交互式环境中输入表达式</strong></h5>
+<pre><code>&gt;&gt;&gt;2+2
+4
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>操作符</th>
+<th>操作</th>
+<th>例子</th>
+<th>求值为</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>**</td>
+<td>指数</td>
+<td>2**3</td>
+<td>8</td>
+</tr>
+<tr>
+<td>//</td>
+<td>整除</td>
+<td>22//8</td>
+<td>2</td>
+</tr>
+<tr>
+<td>/</td>
+<td>除法</td>
+<td>22/8</td>
+<td>2.75</td>
+</tr>
+</tbody>
+</table>
+<p>数学操作符的操作顺序。**操作符首先求值，接下来是*、/、//和%操作符，从左到右。+和-操作符最后求值，也是从左到右。</p>
+<p>可以用括号来改变通常的优先级</p>
+<pre><code>&gt;&gt;&gt;2+3+6
+20
+&gt;&gt;&gt;(2+3)*6
+30
+&gt;&gt;&gt; 48565878*578453
+28093077826734
+&gt;&gt;&gt;2 ** 8
+256
+&gt;&gt;&gt; 23/7
+3.2857142857142856
+&gt;&gt;&gt; 23//7
+3
+&gt;&gt;&gt; 23 % 7
+2
+&gt;&gt; 2 + 2
+4
+&gt;&gt;&gt; (5-1)*((7+1)/(3-1))
+16.0
+
+</code></pre>
+<h5 id="12整型-浮点型和字符串型类型">1.2整型、浮点型和字符串型类型</h5>
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>整型</td>
+<td>-2，-1，0，1，2，3，4，5</td>
+</tr>
+<tr>
+<td>浮点型</td>
+<td>-1.25，-1.0，--0.5，0.0，0.5，1.0，1.25</td>
+</tr>
+<tr>
+<td>字符型</td>
+<td>'a','aa','aaa','Hello!','11 cats'</td>
+</tr>
+</tbody>
+</table>
+<p>Python文本值总是用单引号（'）包围住字符串，甚至可以没有字符的字符串，称为“空字符串”</p>
+<p>忘记字符串末尾的单引号</p>
+<pre><code>'Hello world
+SyntaxError:EOL While sacnning string literal
+</code></pre>
+<h5 id="13-字符串连接和复制">1.3 字符串连接和复制</h5>
+<p>在操作两个整型或浮点型值是，+是相加操作符。但是，在用于两个字符串，他将字符串连接其起来，成为“字符串连接” 操作符。</p>
+<pre><code>&gt;&gt;&gt;'Alice' + 'Bob'
+'AliceBob'
+</code></pre>
+<p>如果你对一个字符串和一个整型值使用加操作符。</p>
+<pre><code>&gt;&gt;&gt;'Alice' +42
+Traceback(most recent call last):
+TypeError：Can't convert ’int‘ object to str implicitly
+</code></pre>
+<p>在用于两个整数或浮点数是，*操作符表示乘法。但*操作符用于一个字符串值和一个整型值时，他变成了“字符串复制”操作符</p>
+<pre><code>&gt;&gt;&gt;'Alice' *5
+'AliceAliceAliceAliceAlice'
+</code></pre>
+<p>*操作符只能用于两个数字（作为乘法），或一个字符串和一个整型（作为字符串复制操作符）。</p>
+<pre><code>&gt;&gt;&gt;'Alice' * 'Bob'
+Traceback (most recent call last)
+TypeError:Can't multiply sequence by non-int of type 'str'
+&gt;&gt;&gt;'Alice ' * 5.0
+Traceback (most recent call last):
+TypeError :can't multiply sequence by non-int of type 'float'
+</code></pre>
+<h5 id="14在变量中保存值">1.4在变量中保存值</h5>
+<h6 id="141赋值语句">1.4.1赋值语句</h6>
+<p>​	变量看成一个带标签的盒子，值放在其中。</p>
+<pre><code>&gt;&gt;&gt;spam = 40
+&gt;&gt;&gt;spam
+40
+&gt;&gt;&gt;eggs = 2
+&gt;&gt;&gt;spam + eggs
+42
+&gt;&gt;&gt;spam + eggs + spam
+&gt;&gt;&gt;spam 
+42
+
+</code></pre>
+<p>如果变量被赋予一个新值，老值就被忘记了，被称为“覆写”该变量</p>
+<pre><code>&gt;&gt;&gt;spam = &quot;Hello&quot;
+&gt;&gt;&gt;spam
+&quot;Hello&quot;
+&gt;&gt;&gt;spam =&quot;Goodbye&quot;
+&gt;&gt;&gt;spam
+'Goodbye'
+
+</code></pre>
+<h6 id="142变量名">1.4.2变量名</h6>
+<p>合法变量名的例子，三条规则：</p>
+<p>1.只能是一个词</p>
+<p>2.只能包含字母、数字和下划线。</p>
+<p>3.不能以数字开头。</p>
+<table>
+<thead>
+<tr>
+<th>有效的变量名</th>
+<th>无效的变量名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>balance</td>
+<td>current-balance(不允许中划线)</td>
+</tr>
+<tr>
+<td>currentBalance</td>
+<td>current balanc（不允许空格）</td>
+</tr>
+<tr>
+<td>current_balance</td>
+<td>4account(不允许数字开头)</td>
+</tr>
+<tr>
+<td>_spam</td>
+<td>42(不允许数字开头)</td>
+</tr>
+<tr>
+<td>SPAM</td>
+<td>total_$um(不允许$这样的特殊字符)</td>
+</tr>
+<tr>
+<td>account4</td>
+<td>‘hello’（不允许’这个的特殊字符</td>
+</tr>
+</tbody>
+</table>
+<p>变量是区分大小写的，变量用小写字母开头是Python的惯例，具有描述性的名字有助于提高代码可读性。</p>
+<h5 id="15第一个程序">1.5第一个程序</h5>
+<p>交互式环境窗口总是有&gt;&gt;&gt;提示符。</p>
+<p>文件编辑窗口没有&gt;&gt;&gt;提示符。</p>
+<pre><code>#this program says hello and asks for my name
+print('Hello, world')
+print('What is your name ?')#ask for their name
+myName =input()
+print('It is good to meet you,'+myName)
+print(&quot;The length of your name is:&quot;)
+print(len(myName))
+print('What is your age?')#ask for their age
+myAge =input()
+print('You will be '+str(int(myAge)+1)+'in a year.')
+</code></pre>
+<p>交互式环境中，程序输出</p>
+<pre><code>Python 3.3.2
+&gt;&gt;&gt;
+Hello world!
+What is your name?
+Al
+It is good to meet you,Al
+The length of your name is:
+2
+What is your age?
+you will be 5 in a year.
+&gt;&gt;&gt;
+</code></pre>
+<p>1.6程序解析</p>
+<h6 id="161注释">1.6.1注释</h6>
+<pre><code>#This program says hello and asks for my name
+</code></pre>
+<p>#标志之后的所有文本都是注释</p>
+<p>临时删除他。这称为“注释掉”代码。</p>
+<h6 id="162-print-函数">1.6.2 print() 函数</h6>
+<pre><code>print('Hello world!')
+print('What is your name?')#ask for their name
+</code></pre>
+<h6 id="163-input函数">1.6.3 input()函数</h6>
+<p>函数等待用户在键盘输入一些文本，并按下回车键。</p>
+<pre><code>myName = input()
+</code></pre>
+<h6 id="164-打印用户的名字">1.6.4 打印用户的名字</h6>
+<pre><code>print('It is good to meet you,' +myName)
+</code></pre>
+<h6 id="165-len函数">1.6.5 len()函数</h6>
+<pre><code>print('The length of your name is:')
+print(len(myName))
+</code></pre>
+<pre><code>&gt;&gt;&gt;len('Hello')
+5
+&gt;&gt;&gt;len('My very energetic monster just scarfed nachos.')
+46
+&gt;&gt;&gt;len('')
+0
+</code></pre>
+<p>print()允许传入一个整型值或字符串</p>
+<pre><code>print('I am '+29+'years old.')
+Traceback(most recent call last):
+TypeError:Can't convert 'int ' object to str implicitly
+</code></pre>
+<p>+操作符加两个整数，或连接两个字符串，不能让一个整数和一个字符串相加。</p>
+<pre><code>&gt;&gt;&gt;'I am '+29+'year old.'
+</code></pre>
+<p>1.6.6 str() 、int()和float()函数</p>
+<pre><code>&gt;&gt;&gt; str(29)
+'29'
+&gt;&gt;&gt; print('I am ' + str(29) + ' years old.')
+I am 29 years old.
+</code></pre>
+<pre><code>&gt;&gt;&gt; str(0)
+'0'
+&gt;&gt;&gt; str(-3.14)
+'-3.14'
+&gt;&gt;&gt; int('42')
+42
+&gt;&gt;&gt; int('-99')
+-99
+&gt;&gt;&gt; int(1.25)
+1
+&gt;&gt;&gt; int(1.99)
+1
+&gt;&gt;&gt; float('3.14')
+3.14
+&gt;&gt;&gt; float(10)
+10.0
+</code></pre>
+<pre><code>&gt;&gt;&gt; spam = input()
+101
+&gt;&gt;&gt; spam
+'101'
+</code></pre>
+<pre><code>&gt;&gt;&gt; spam = int(spam)
+&gt;&gt;&gt; spam
+101
+</code></pre>
+<pre><code>&gt;&gt;&gt; spam * 10 / 5
+202.0
+</code></pre>
+<pre><code>&gt;&gt;&gt; int('99.99')
+Traceback (most recent call last):
+File &quot;&lt;pyshell#18&gt;&quot;, line 1, in &lt;module&gt;
+int('99.99')
+ValueError: invalid literal for int() with base 10: '99.99'
+&gt;&gt;&gt; int('twelve')
+Traceback (most recent call last):
+File &quot;&lt;pyshell#19&gt;&quot;, line 1, in &lt;module&gt;
+int('twelve')
+ValueError: invalid literal for int() with base 10: 'twelve
+</code></pre>
+<pre><code>&gt;&gt;&gt; int(7.7)
+7
+&gt;&gt;&gt; int(7.7) + 1
+8
+</code></pre>
+<pre><code>print('What is your age?') # ask for their age
+myAge = input()
+print('You will be ' + str(int(myAge) + 1) + ' in a year.')
+</code></pre>
+<pre><code>&gt;&gt;&gt; 42 == '42'
+False
+&gt;&gt;&gt; 42 == 42.0
+True
+&gt;&gt;&gt; 42.0 == 0042.000
+True
+</code></pre>
+<p>1.8习题</p>
+<p>1．下面哪些是操作符，哪些是值？<br>
+*<br>
+'hello'<br>
+-88.8<br>
+- /</p>
+<p>+</p>
+<p>5</p>
+<p>2．下面哪个是变量，哪个是字符串？<br>
+spam<br>
+'spam'<br>
+3．说出 3 种数据类型。<br>
+4．表达式由什么构成？所有表达式都做什么事？<br>
+5．本章介绍了赋值语句，如 spam = 10。表达式和语句有什么区别？<br>
+6．下列语句运行后，变量 bacon 的值是什么？<br>
+bacon = 20<br>
+bacon + 1<br>
+7．下面两个表达式求值的结果是什么？<br>
+'spam' + 'spamspam'<br>
+'spam' * 3<br>
+8．为什么 eggs 是有效的变量名，而 100 是无效的？<br>
+9．哪 3 个函数能分别取得一个值的整型、浮点型或字符串版本？<br>
+10．为什么这个表达式会导致错误？如何修复？<br>
+'I have eaten ' + 99 + ' burritos.'<br>
+附加题：在线查找 len()函数的 Python 文档。它在一个标题为“Built-in Functions”<br>
+的网页上。扫一眼 Python 的其他函数的列表，查看 round()函数的功能，在交互式<br>
+环境中使用它。</p>
 ]]></content>
     </entry>
     <entry>
