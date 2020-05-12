@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://syl2017.github.io/</id>
     <title>亮仔的博客</title>
-    <updated>2020-05-12T08:59:20.185Z</updated>
+    <updated>2020-05-12T09:03:31.238Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://syl2017.github.io/"/>
     <link rel="self" href="https://syl2017.github.io/atom.xml"/>
@@ -321,30 +321,41 @@ True
 True
 </code></pre>
 <p>1.8习题</p>
-<p>1．下面哪些是操作符，哪些是值？<br>
-*<br>
-'hello'<br>
--88.8<br>
-- /</p>
-<p>+</p>
-<p>5</p>
-<p>2．下面哪个是变量，哪个是字符串？<br>
-spam<br>
-'spam'<br>
-3．说出 3 种数据类型。<br>
+<p>1．下面哪些是操作符，哪些是值？</p>
+<pre><code>*
+'hello'
+-88.8
+\- /  
+
+\+
+
+ 5  
+</code></pre>
+<p>2．下面哪个是变量，哪个是字符串？</p>
+<p>3．说出 3 种数据类型。<br>
 4．表达式由什么构成？所有表达式都做什么事？<br>
 5．本章介绍了赋值语句，如 spam = 10。表达式和语句有什么区别？<br>
-6．下列语句运行后，变量 bacon 的值是什么？<br>
-bacon = 20<br>
-bacon + 1<br>
-7．下面两个表达式求值的结果是什么？<br>
-'spam' + 'spamspam'<br>
-'spam' * 3<br>
-8．为什么 eggs 是有效的变量名，而 100 是无效的？<br>
+6．下列语句运行后，变量 bacon 的值是什么？</p>
+<p>7．下面两个表达式求值的结果是什么？</p>
+<pre><code>bacon = 20
+bacon + 1
+</code></pre>
+<p>7．下面两个表达式求值的结果是什么？</p>
+<p>8．为什么 eggs 是有效的变量名，而 100 是无效的？<br>
 9．哪 3 个函数能分别取得一个值的整型、浮点型或字符串版本？<br>
-10．为什么这个表达式会导致错误？如何修复？<br>
-'I have eaten ' + 99 + ' burritos.'<br>
-附加题：在线查找 len()函数的 Python 文档。它在一个标题为“Built-in Functions”<br>
+10．为什么这个表达式会导致错误？如何修复？</p>
+<pre><code>'spam' + 'spamspam'
+'spam' * 3
+</code></pre>
+<p>8．为什么 eggs 是有效的变量名，而 100 是无效的？<br>
+9．哪 3 个函数能分别取得一个值的整型、浮点型或字符串版本？<br>
+10．为什么这个表达式会导致错误？如何修复？</p>
+<p>附加题：在线查找 len()函数的 Python 文档。它在一个标题为“Built-in Functions”<br>
+的网页上。扫一眼 Python 的其他函数的列表，查看 round()函数的功能，在交互式<br>
+环境中使用它。</p>
+<pre><code>'I have eaten ' + 99 + ' burritos.'
+</code></pre>
+<p>附加题：在线查找 len()函数的 Python 文档。它在一个标题为“Built-in Functions”<br>
 的网页上。扫一眼 Python 的其他函数的列表，查看 round()函数的功能，在交互式<br>
 环境中使用它。</p>
 ]]></content>
