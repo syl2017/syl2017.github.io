@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://syl2017.github.io/</id>
     <title>亮仔的博客</title>
-    <updated>2020-05-12T09:03:31.238Z</updated>
+    <updated>2020-05-13T07:38:54.057Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://syl2017.github.io/"/>
     <link rel="self" href="https://syl2017.github.io/atom.xml"/>
@@ -27,6 +27,8 @@
         <updated>2020-05-12T07:53:22.000Z</updated>
         <content type="html"><![CDATA[<p>第一章 Python 基础</p>
 <h5 id="11在交互式环境中输入表达式"><strong>1.1在交互式环境中输入表达式</strong></h5>
+<p>在Python中，2+2称为表达式，他是语言中最基本的编程结构</p>
+<p>表达式是值和操作符的组合，使用表达式的地方也可以是一个值。</p>
 <pre><code>&gt;&gt;&gt;2+2
 4
 </code></pre>
@@ -62,7 +64,7 @@
 </table>
 <p>数学操作符的操作顺序。**操作符首先求值，接下来是*、/、//和%操作符，从左到右。+和-操作符最后求值，也是从左到右。</p>
 <p>可以用括号来改变通常的优先级</p>
-<pre><code>&gt;&gt;&gt;2+3+6
+<pre><code>&gt;&gt;&gt;2+3*6
 20
 &gt;&gt;&gt;(2+3)*6
 30
@@ -142,7 +144,9 @@ TypeError :can't multiply sequence by non-int of type 'float'
 &gt;&gt;&gt;spam + eggs
 42
 &gt;&gt;&gt;spam + eggs + spam
-&gt;&gt;&gt;spam 
+82
+&gt;&gt;&gt;spam=spam+2
+&gt;&gt;&gt;spam
 42
 
 </code></pre>
@@ -219,6 +223,7 @@ It is good to meet you,Al
 The length of your name is:
 2
 What is your age?
+4
 you will be 5 in a year.
 &gt;&gt;&gt;
 </code></pre>
@@ -237,7 +242,7 @@ print('What is your name?')#ask for their name
 <pre><code>myName = input()
 </code></pre>
 <h6 id="164-打印用户的名字">1.6.4 打印用户的名字</h6>
-<pre><code>print('It is good to meet you,' +myName)
+<pre><code>bprint('It is good to meet you,' +myName)
 </code></pre>
 <h6 id="165-len函数">1.6.5 len()函数</h6>
 <pre><code>print('The length of your name is:')
@@ -259,6 +264,7 @@ TypeError:Can't convert 'int ' object to str implicitly
 <pre><code>&gt;&gt;&gt;'I am '+29+'year old.'
 </code></pre>
 <p>1.6.6 str() 、int()和float()函数</p>
+<p>str()、int()和float()函数将分别求值为传入值的字符串、整数和浮点数形式。</p>
 <pre><code>&gt;&gt;&gt; str(29)
 '29'
 &gt;&gt;&gt; print('I am ' + str(29) + ' years old.')
@@ -313,6 +319,8 @@ ValueError: invalid literal for int() with base 10: 'twelve
 myAge = input()
 print('You will be ' + str(int(myAge) + 1) + ' in a year.')
 </code></pre>
+<p>文本和数字相等判断</p>
+<p>字符串值被认为与整数值和浮点数值完全不同，但整数值可以与浮点数相等。</p>
 <pre><code>&gt;&gt;&gt; 42 == '42'
 False
 &gt;&gt;&gt; 42 == 42.0
@@ -323,37 +331,44 @@ True
 <p>1.8习题</p>
 <p>1．下面哪些是操作符，哪些是值？</p>
 <pre><code>*
-'hello'
+‘hello'
 -88.8
-\- /  
-
-\+
-
- 5  
+-
+/
++
+5
+答案：操作符是+、 −、 *和/。值是'hello'、 −88.8 和 5
 </code></pre>
 <p>2．下面哪个是变量，哪个是字符串？</p>
-<p>3．说出 3 种数据类型。<br>
-4．表达式由什么构成？所有表达式都做什么事？<br>
-5．本章介绍了赋值语句，如 spam = 10。表达式和语句有什么区别？<br>
-6．下列语句运行后，变量 bacon 的值是什么？</p>
-<p>7．下面两个表达式求值的结果是什么？</p>
+<pre><code>spam
+’spam‘
+答案：字符串是'spam'，变量是 spam。字符串总是以引号开始和结束。
+</code></pre>
+<p>3．说出 3 种数据类型。</p>
+<p>本章介绍的 3 种数据类型是整数、浮点数和字符串。</p>
+<p>4．表达式由什么构成？所有表达式都做什么事？</p>
+<p>表达式是值和操作符的结合。所有表达式都求值为（即归约为）一个值。</p>
+<p>5．本章介绍了赋值语句，如 spam = 10。表达式和语句有什么区别？</p>
+<p>表达式求值为一个值。语句不是这样</p>
+<p>6．下列语句运行后，变量 bacon 的值是什么？</p>
 <pre><code>bacon = 20
 bacon + 1
+bacon 变量被设置为 20。表达式 bacon + 1 并没有对 bacon 重新赋值（重新
+赋值需要一个赋值语句： bacon =bacon + 1）
 </code></pre>
 <p>7．下面两个表达式求值的结果是什么？</p>
-<p>8．为什么 eggs 是有效的变量名，而 100 是无效的？<br>
-9．哪 3 个函数能分别取得一个值的整型、浮点型或字符串版本？<br>
-10．为什么这个表达式会导致错误？如何修复？</p>
 <pre><code>'spam' + 'spamspam'
 'spam' * 3
+两个表达式都求值为字符串'spamspamspam'。
 </code></pre>
-<p>8．为什么 eggs 是有效的变量名，而 100 是无效的？<br>
-9．哪 3 个函数能分别取得一个值的整型、浮点型或字符串版本？<br>
-10．为什么这个表达式会导致错误？如何修复？</p>
-<p>附加题：在线查找 len()函数的 Python 文档。它在一个标题为“Built-in Functions”<br>
-的网页上。扫一眼 Python 的其他函数的列表，查看 round()函数的功能，在交互式<br>
-环境中使用它。</p>
+<p>8．为什么 eggs 是有效的变量名，而 100 是无效的？</p>
+<p>变量名不能以数字开始。</p>
+<p>9．哪 3 个函数能分别取得一个值的整型、浮点型或字符串版本？</p>
+<p>int()、 float() 和 str() 函数将返回传入值的整型、浮点型和字符串版本</p>
+<p>10．为什么这个表达式会导致错误？如何修复？</p>
 <pre><code>'I have eaten ' + 99 + ' burritos.'
+该表达式导致错误是因为， 99 是一个整数，只有字符串能用+操作符与其
+他字符串连接。正确的方式是'I have eaten ' + str(99) + ' burritos.'。
 </code></pre>
 <p>附加题：在线查找 len()函数的 Python 文档。它在一个标题为“Built-in Functions”<br>
 的网页上。扫一眼 Python 的其他函数的列表，查看 round()函数的功能，在交互式<br>
